@@ -65,6 +65,7 @@ header{
 #featured{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 
 #featured_title{
@@ -75,11 +76,15 @@ header{
 }
 
 .project{
+	box-shadow: 2px 2px 5px #848483;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 10px 0 10px 0;
-	max-width: 100%;
+	flex-flow: column;
+	margin: 10px 0 5px 0;
+	max-width: 250px;
+}
+
+.project:hover {
+	box-shadow: 5px 5px 5px #848483;
 }
 
 .project_info{
@@ -87,7 +92,6 @@ header{
 	display: flex;
 	flex-flow: column;
 	max-width: 100%;
-	width: 250px;
 	word-wrap: break-word;
 }
 
@@ -99,13 +103,13 @@ header{
 
 .date_complete{
 	font-size: 12px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin: 5px;
 }
 
 .url{
 	font-size: 12px;
-	max-width: 100%;
+	max-width: 90%;
+	margin-bottom: 5px;
 }
 
 .project_description{
@@ -114,74 +118,35 @@ header{
 
 /* Layout Shift for Tablets*/
 
-@media screen and (min-width: 516px){
-
+@media screen and (min-width: 426px) and (max-width: 768px){
 	.project{
-		justify-content: flex-start;
-		align-items: center;
-		margin-top: 10px;
+		box-shadow: 2px 2px 5px #848483;
+		flex-flow: row;
+		max-width: 100%;
 	}
 
-	.project_image {
-		max-width: 250px;
-		max-height: 150px;
-		width: 50%;
+	.project_image{
+		width: 250px;
 	}
 
 	.project_info{
-		flex-grow: 2;
-		max-height: 150px;
-		max-width: 380px;
-		width: 50%;
-	}
-
-	.url,
-	.project_description{
-		max-width: 90%;
-	}
-
-	.project_description{
-		display: block;
-		font-size: 14px;
-		overflow: scroll;
-	}
-
-}
-
-/* Minor breakpoint to center featured work*/
-
-@media screen and (min-width: 650px){
-	.project{
-		margin-left: auto;
-		margin-right: auto;
+		justify-content: space-around;
+		max-width: calc(100% - 250px);
 	}
 
 }
 
 /* Layout Shift for Laptops and up */
 
-@media screen and (min-width: 920px){
+@media screen and (min-width: 769px){
 	body{
 		margin: auto;
 		max-width: 900px;
+		width: calc(100% - 16px);
 	}
 
 	.project{
-		flex-flow: column;
-		width: 33.33%;
-	}
-
-	.project_image{
-		width: 100%;
-	}
-
-	.project_info{
-		width: 100%;
-	}
-
-	.project_info{
-		max-height: 500px;
-		max-width: 300px;
+		margin: 10px auto 10px auto;
 	}
 
 }

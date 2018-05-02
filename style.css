@@ -61,16 +61,17 @@ header{
 
 /* Featured Work Section */
 
-#featured{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
 #featured_title{
 	color: #7d97ad;
 	margin: 0;
 	text-align: center;
+	width: 100%;
+}
+
+#projects{
+	align-items: center;
+	display: flex;
+	flex-flow: column;
 	width: 100%;
 }
 
@@ -119,7 +120,6 @@ header{
 
 @media screen and (min-width: 426px) and (max-width: 915px){
 	.project{
-		box-shadow: 2px 2px 5px #848483;
 		flex-flow: row;
 		max-width: 100%;
 	}
@@ -144,10 +144,16 @@ header{
 		width: calc(100% - 16px);
 	}
 
-	.project{
-		margin: 10px auto 10px auto;
+	#featured_title{
+		text-align: left;
 	}
 
+	#projects{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
 
 

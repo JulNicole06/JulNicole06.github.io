@@ -57,9 +57,13 @@ header{
 
 #hero{
 	margin-bottom: 10px;
-	width: 100%;
+	max-width: 100%;
+	width: 900px;
 }
 
+#hero_image{
+	max-width: 100%;
+}
 /* Featured Work Section */
 
 #featured{
@@ -118,7 +122,7 @@ header{
 
 /* Layout Shift for Tablets*/
 
-@media screen and (min-width: 426px) and (max-width: 768px){
+@media screen and (min-width: 426px) and (max-width: 915px){
 	.project{
 		box-shadow: 2px 2px 5px #848483;
 		flex-flow: row;
@@ -138,7 +142,7 @@ header{
 
 /* Layout Shift for Laptops and up */
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 916px){
 	body{
 		margin: auto;
 		max-width: 900px;
@@ -150,6 +154,8 @@ header{
 	}
 
 }
+
+
 
 
 

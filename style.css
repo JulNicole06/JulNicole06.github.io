@@ -145,6 +145,10 @@ header {
 		width: calc(100% - 16px);
 	}
 
+	#logo {
+		width: 250px;
+	}
+
 	#featured_title {
 		text-align: left;
 	}

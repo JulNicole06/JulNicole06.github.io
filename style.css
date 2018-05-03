@@ -21,10 +21,6 @@ header{
 	width: 100%;
 }
 
-#logo{
-	width: 150px;
-}
-
 #title_div{
 	display: flex;
 	flex-flow: row wrap;
@@ -162,6 +158,11 @@ header{
 
 	.project{
 		width: 250px;
+	}
+
+	.project_info{
+		height: 80px;
+		justify-content: center;
 	}
 }
 

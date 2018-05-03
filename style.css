@@ -21,14 +21,14 @@ header{
 	width: 100%;
 }
 
-#logo_div{
-	width: 20%;
+#logo{
+	width: 150px;
 }
 
 #title_div{
 	display: flex;
 	flex-flow: row wrap;
-	width: 80%;
+	width: 100%;
 }
 
 #name{

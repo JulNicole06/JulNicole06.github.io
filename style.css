@@ -80,11 +80,19 @@ header{
 	display: flex;
 	flex-flow: column;
 	margin: 10px 0 5px 0;
-	max-width: 250px;
+	max-width: 80%;
+	width: 100%;
 }
 
 .project:hover {
 	box-shadow: 5px 5px 5px #848483;
+}
+
+#project_image_div{
+	background-color: #e6e6e6;
+	display: flex;
+	height: 150px;
+	justify-content: center;
 }
 
 .project_info{
@@ -99,6 +107,8 @@ header{
 	font-size: 15px;
 	font-weight: bolder;
 	margin: 0;
+	text-align: center;
+	width: 100%;
 }
 
 .date_complete{
@@ -108,12 +118,7 @@ header{
 
 .url{
 	font-size: 12px;
-	max-width: 90%;
 	margin-bottom: 5px;
-}
-
-.project_description{
-	display: none;
 }
 
 /* Layout Shift for Tablets*/
@@ -121,18 +126,18 @@ header{
 @media screen and (min-width: 426px) and (max-width: 915px){
 	.project{
 		flex-flow: row;
-		max-width: 100%;
 	}
 
-	.project_image{
-		width: 250px;
+	#project_image_div{
+		height: 150px;
+		min-width: 250px;
 	}
 
 	.project_info{
+		align-content: center;
 		justify-content: space-around;
-		max-width: calc(100% - 250px);
+		width: 100%;
 	}
-
 }
 
 /* Layout Shift for Laptops and up */
@@ -153,6 +158,10 @@ header{
 		flex-flow: row wrap;
 		justify-content: space-between;
 		width: 100%;
+	}
+
+	.project{
+		width: 250px;
 	}
 }
 
